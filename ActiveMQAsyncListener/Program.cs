@@ -34,7 +34,7 @@ namespace ActiveMQAsyncListener
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.BackgroundColor = ConsoleColor.White;
-                Console.Write(" YILPORT HOLDINC INC. ");
+                Console.Write(" Listener Application ");
                 Console.ResetColor();
                 Console.BackgroundColor = ConsoleColor.DarkBlue;
                 Console.ForegroundColor = ConsoleColor.White;
@@ -113,7 +113,7 @@ namespace ActiveMQAsyncListener
                         {
                             if (OldMessage != message.NMSMessageId)
                             {
-                                //message.Text XML olarak dönen mesajı bu şekilde yakalayıp işlem yapabilirsiniz.
+                                //message.Text mesaj icerigini bu şekilde yakalayıp işlem yapabilirsiniz.
 
                                 Counter++;
                                 Console.Write("\r|> " + spaceChecker("Total Message |---> " + Counter.ToString() + " <---| Last at : " + DateTime.Now.ToString()) + "|");
